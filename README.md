@@ -54,7 +54,7 @@
   ```
 * Instalar el sistema base y paquetes extra que van a ser necesarios
   ```
-  pacstrap -i /mnt base base-devel grub efibootmgr network-manager-applet networkmanager wireless_tools wpa_supplicant linux linux-firmware xf86-video-intel
+  pacstrap -i /mnt base base-devel grub efibootmgr network-manager-applet networkmanager wireless_tools wpa_supplicant linux linux-firmware xf86-video-intel intel-ucode
   ```
 * Cambiar root a */mnt*
   ```
