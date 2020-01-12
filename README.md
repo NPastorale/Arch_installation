@@ -64,6 +64,18 @@
   ```
   pacstrap -i /mnt base base-devel grub efibootmgr network-manager-applet networkmanager linux linux-firmware xf86-video-intel intel-ucode nvidia xorg-server
   ```
+  * base..................................................Paquetes básicos iniciales de la instalación
+  * base-devel.....................................Paquetes necesarios para utilizar AUR y administración del sistema
+  * grub...................................................Bootloader
+  * efibootmgr......................................Utilidad para booteo por UEFI
+  * networkmanager.........................Administrador de conexiones
+  * network-manager-applet.........Applet de NetworkManager
+  * linux...................................................Kernel
+  * linux-firmware...............................Firmware necesario para Intel Wireless-AC 9560
+  * xf86-video-intel............................Drivers de Xorg para Intel
+  * intel-ucode.....................................Microcode para Intel
+  * nvidia................................................Drivers de NVIDIA
+  * xorg-server....................................Servidor de X
 * Generar el fstab para el automontado de las particiones
   ```
   genfstab -U /mnt >> /mnt/etc/fstab
