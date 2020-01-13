@@ -1,16 +1,16 @@
 # Instalación Arch Linux
 
-1. [Instalación Arch Linux](#instalaci%c3%b3n-arch-linux)
-   1. [Instalación inicibaseal](#instalaci%c3%b3n-inicibaseal)
-      1. [Conexión a Internet y configuración de fecha y hora](#conexi%c3%b3n-a-internet-y-configuraci%c3%b3n-de-fecha-y-hora)
-      2. [Definición y formateo de particiones](#definici%c3%b3n-y-formateo-de-particiones)
-      3. [Montaje y creación de directorios necesarios](#montaje-y-creaci%c3%b3n-de-directorios-necesarios)
-      4. [Instalación y configuración del sistema base](#instalaci%c3%b3n-y-configuraci%c3%b3n-del-sistema-base)
-      5. [Configuración de GRUB](#configuraci%c3%b3n-de-grub)
-      6. [Pasos finales](#pasos-finales)
-   2. [Configuración](#configuraci%c3%b3n)
+- [Instalación Arch Linux](#instalaci%c3%b3n-arch-linux)
+  - [Instalación base](#instalaci%c3%b3n-base)
+    - [Conexión a Internet y configuración de fecha y hora](#conexi%c3%b3n-a-internet-y-configuraci%c3%b3n-de-fecha-y-hora)
+    - [Definición y formateo de particiones](#definici%c3%b3n-y-formateo-de-particiones)
+    - [Montaje y creación de directorios necesarios](#montaje-y-creaci%c3%b3n-de-directorios-necesarios)
+    - [Instalación y configuración del sistema base](#instalaci%c3%b3n-y-configuraci%c3%b3n-del-sistema-base)
+    - [Configuración de GRUB](#configuraci%c3%b3n-de-grub)
+    - [Pasos finales](#pasos-finales)
+  - [Configuración](#configuraci%c3%b3n)
 
-## Instalación inicibaseal
+## Instalación base
 
 ### Conexión a Internet y configuración de fecha y hora
 
