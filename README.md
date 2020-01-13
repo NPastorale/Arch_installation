@@ -1,4 +1,6 @@
-# Instalación Arch Linux
+# Introducción
+
+Esto es una guía creada a modo de documentación, y recovery en caso de ser necesario, que responde a mis necesidades específicas para la instalación y configuración básica de Arch Linux en una Lenovo Legion Y540. Puede ser utilizada para cualquier otro sistema realizando pequeñas modificaciones si fuesen necesarias. Todo está basado en la [ArchWiki](https://wiki.archlinux.org/) y diferentes respuestas que fuí encontrando a los problemas que se me presentaron durante el uso de Arch.
 
 - [Instalación Arch Linux](#instalaci%c3%b3n-arch-linux)
   - [Instalación base](#instalaci%c3%b3n-base)
@@ -9,6 +11,8 @@
     - [Configuración de GRUB](#configuraci%c3%b3n-de-grub)
     - [Pasos finales](#pasos-finales)
   - [Configuración](#configuraci%c3%b3n)
+
+# Instalación Arch Linux
 
 ## Instalación base
 
@@ -85,7 +89,7 @@
   - _network-manager-applet_ - Applet de NetworkManager
   - _linux_ - Kernel
   - _linux-firmware_ - Firmware necesario para Intel Wireless-AC 9560
-  - _xf86-video-intel_ - Drivers de Xorg para Intel (Investigar si conviene utilizar modeset)
+  - _xf86-video-intel_ - Drivers de Xorg para Intel **(Investigar si conviene utilizar modeset)**
   - _intel-ucode_ - Microcode para Intel
   - _nvidia_ - Drivers de NVIDIA
   - _xorg-server_ - Servidor de X
