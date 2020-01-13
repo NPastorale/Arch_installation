@@ -1,6 +1,6 @@
 # Introducción
 
-Esto es una guía creada a modo de documentación, y recovery en caso de ser necesario, que responde a mis necesidades específicas para la instalación y configuración básica de Arch Linux en una Lenovo Legion Y540. Puede ser utilizada para cualquier otro sistema realizando pequeñas modificaciones si fuesen necesarias. Todo está basado en la [ArchWiki](https://wiki.archlinux.org/) y diferentes respuestas que fuí encontrando a los problemas que se me presentaron durante el uso de Arch.
+Esto es una guía creada a modo de documentación, y recovery en caso de ser necesario, que responde a mis necesidades específicas para la instalación y configuración básica de Arch Linux en una Lenovo Legion Y540. Puede ser utilizada para cualquier otro sistema realizando pequeñas modificaciones en caso de que fuesen necesarias. La gran mayoría del proceso está basado en la [ArchWiki](https://wiki.archlinux.org/), en diferentes respuestas que fuí encontrando a los problemas que se me presentaron durante el uso de Arch y lo que aprendí en el proceso.
 
 - [Instalación Arch Linux](#instalaci%c3%b3n-arch-linux)
   - [Instalación base](#instalaci%c3%b3n-base)
