@@ -1,8 +1,10 @@
-<!-- TOC -->autoauto- [1. Instalación Arch Linux](#1-instalación-arch-linux)auto    - [1.1. Conexión a Internet y configuración de fecha y hora](#11-conexión-a-internet-y-configuración-de-fecha-y-hora)auto    - [1.2. Definición y formateo de particiones](#12-definición-y-formateo-de-particiones)auto    - [1.3. Montaje y creación de directorios necesarios](#13-montaje-y-creación-de-directorios-necesarios)auto    - [1.4. Instalación y configuración del sistema base](#14-instalación-y-configuración-del-sistema-base)auto    - [1.5. Configuración de GRUB](#15-configuración-de-grub)auto    - [1.6. Pasos finales](#16-pasos-finales)auto- [2. Configuración](#2-configuración)autoauto<!-- /TOC -->
+# Instalación Arch Linux
 
-# 1. Instalación Arch Linux
+autoauto- [Instalación Arch Linux](#instalación-arch-linux)auto - [1. Instalación inicial](#1-instalación-inicial)auto - [1.1. Conexión a Internet y configuración de fecha y hora](#11-conexión-a-internet-y-configuración-de-fecha-y-hora)auto - [1.2. Definición y formateo de particiones](#12-definición-y-formateo-de-particiones)auto - [1.3. Montaje y creación de directorios necesarios](#13-montaje-y-creación-de-directorios-necesarios)auto - [1.4. Instalación y configuración del sistema base](#14-instalación-y-configuración-del-sistema-base)auto - [1.5. Configuración de GRUB](#15-configuración-de-grub)auto - [1.6. Pasos finales](#16-pasos-finales)auto - [2. Configuración](#2-configuración)autoauto
 
-## 1.1. Conexión a Internet y configuración de fecha y hora
+## 1. Instalación inicial
+
+### 1.1. Conexión a Internet y configuración de fecha y hora
 
 - Revisar que la placa de WiFi no esté bloqueada. De ser así, habilitarla con las teclas de la notebook
   ```
@@ -26,7 +28,7 @@
   timedatectl status
   ```
 
-## 1.2. Definición y formateo de particiones
+### 1.2. Definición y formateo de particiones
 
 - Listar los discos para decidir sobre cuál instalar
   ```
@@ -48,7 +50,7 @@
   mkfs.ext4 /dev/nvme0n1p3
   ```
 
-## 1.3. Montaje y creación de directorios necesarios
+### 1.3. Montaje y creación de directorios necesarios
 
 - Montar la partición _root_
   ```
@@ -60,7 +62,7 @@
   mount /dev/nvme0n1p3 /mnt/home
   ```
 
-## 1.4. Instalación y configuración del sistema base
+### 1.4. Instalación y configuración del sistema base
 
 - Instalar el sistema base y paquetes extra que van a ser necesarios
   ```
@@ -110,7 +112,7 @@
   127.0.1.1  myhostname.localdomain  myhostname
   ```
 
-## 1.5. Configuración de GRUB
+### 1.5. Configuración de GRUB
 
 - Crear el directorio para montar la partición _EFI_
   ```
@@ -135,7 +137,7 @@
   grub-mkconfig -o /boot/grub/grub.cfg
   ```
 
-## 1.6. Pasos finales
+### 1.6. Pasos finales
 
 - Definir la contraseña de **root**
   ```
@@ -148,7 +150,7 @@
   reboot
   ```
 
-# 2. Configuración
+## 2. Configuración
 
 - Activar e iniciar NetworkManager
   ```
