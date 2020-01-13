@@ -38,15 +38,11 @@
     | `/mnt`      | `/dev/nvme0n1p2` | Linux filesystem |         50 GiB |
     | `/mnt/home` | `/dev/nvme0n1p3` | Linux filesystem |      Remainder |
 * Formatear las particiones
-  * ```
-    mkfs.fat -F32 /dev/nvme0n1p1
-    ```
-  * ```
-    mkfs.ext4 /dev/nvme0n1p2
-    ```
-  * ```
-    mkfs.ext4 /dev/nvme0n1p3
-    ```
+  ```
+  mkfs.fat -F32 /dev/nvme0n1p1
+  mkfs.ext4 /dev/nvme0n1p2
+  mkfs.ext4 /dev/nvme0n1p3
+   ```
 
 ##  Montaje y creación de directorios necesarios
 * Montar la partición *root*
@@ -64,18 +60,18 @@
   ```
   pacstrap -i /mnt base base-devel grub efibootmgr network-manager-applet networkmanager linux linux-firmware xf86-video-intel intel-ucode nvidia xorg-server
   ```
-  * base..................................................Paquetes básicos iniciales de la instalación
-  * base-devel.....................................Paquetes necesarios para utilizar AUR y administración del sistema
-  * grub...................................................Bootloader
-  * efibootmgr......................................Utilidad para booteo por UEFI
-  * networkmanager.........................Administrador de conexiones
-  * network-manager-applet.........Applet de NetworkManager
-  * linux...................................................Kernel
-  * linux-firmware...............................Firmware necesario para Intel Wireless-AC 9560
-  * xf86-video-intel............................Drivers de Xorg para Intel
-  * intel-ucode.....................................Microcode para Intel
-  * nvidia................................................Drivers de NVIDIA
-  * xorg-server....................................Servidor de X
+  * *base* - Paquetes básicos iniciales de la instalación
+  * *base-devel* - Paquetes necesarios para utilizar AUR y administración del sistema
+  * *grub* - Bootloader
+  * *efibootmgr* - Utilidad para booteo por UEFI
+  * *networkmanager* - Administrador de conexiones
+  * *network-manager-applet* - Applet de NetworkManager
+  * *linux* - Kernel
+  * *linux-firmware* - Firmware necesario para Intel Wireless-AC 9560
+  * *xf86-video-intel* - Drivers de Xorg para Intel
+  * *intel-ucode* - Microcode para Intel
+  * *nvidia* - Drivers de NVIDIA
+  * *xorg-server* - Servidor de X
 * Generar el fstab para el automontado de las particiones
   ```
   genfstab -U /mnt >> /mnt/etc/fstab
@@ -147,9 +143,8 @@
   ```
   systemctl enable NetworkManager
   ```
-
 * Agregar el usuario principal
   ```
   useradd -m -g users -G wheel,audio,video nahue
-* **------AGREGAR ACA EL DESKTOP MANAGER QUE ELIJA------**
-* **------HACER UN SYSTEMCTL ENABLE Y EL DM QUE HAYA INSTALADO------**
+TODO AGREGAR ACA EL DESKTOP MANAGER QUE ELIJA
+TODO HACER UN SYSTEMCTL ENABLE Y EL DM QUE HAYA INSTALADO
