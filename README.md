@@ -78,7 +78,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 
 - Instalar el sistema base y paquetes extra que van a ser necesarios
   ```
-  pacstrap -i /mnt base base-devel bash-completion grub efibootmgr networkmanager network-manager-applet linux linux-firmware xf86-video-intel intel-ucode nvidia xorg-server vim
+  pacstrap -i /mnt base base-devel bash-completion grub efibootmgr networkmanager linux linux-firmware intel-ucode vim
   ```
   - _base_ - Paquetes básicos iniciales de la instalación
   - _base-devel_ - Paquetes necesarios para utilizar AUR y administración del sistema
@@ -86,13 +86,9 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - _grub_ - Bootloader
   - _efibootmgr_ - Utilidad para booteo por UEFI
   - _networkmanager_ - Administrador de conexiones
-  - _network-manager-applet_ - Applet de NetworkManager
   - _linux_ - Kernel
   - _linux-firmware_ - Firmware necesario para Intel Wireless-AC 9560
-  - _xf86-video-intel_ - Drivers de Xorg para Intel **(Investigar si conviene utilizar modeset)**
   - _intel-ucode_ - Microcode para Intel
-  - _nvidia_ - Drivers de NVIDIA
-  - _xorg-server_ - Servidor de X
   - _vim_ - El mejor editor de texto
 - Generar el fstab para el automontado de las particiones
   ```
@@ -178,18 +174,26 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
   chfn -f <NOMBRE_COMPLETO> <USUARIO>
   ```
-- Desloguearse e iniciar sesión con el usuario creado
+- Desloguearse e iniciar sesión con el nuevo usuario
 - Conectarse al WiFi
   ```
   nmcli radio wifi
   nmcli dev wifi list
   sudo nmcli --ask dev wifi connect <NOMBRE_DE_LA_RED>
   ```
-- Instalar y ejecutar **reflector**
+- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida
   ```
   sudo pacman -S reflector
   sudo reflector -n 12 -p https --sort rate --score 10 --save /etc/pacman.d/mirrorlist
   ```
+- Instalar paquetes necesarios para la Y540
+  ```
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server
+  ```
+  - _network-manager-applet_ - Applet de NetworkManager
+  - _xf86-video-intel_ - Drivers de Xorg para Intel **(Investigar si conviene utilizar modeset)**
+  - _nvidia_ - Drivers de NVIDIA
+  - _xorg-server_ - Servidor de X
 - Instalar el helper de AUR **yay**
   ```
   git clone https://aur.archlinux.org/yay.git
