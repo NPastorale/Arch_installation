@@ -188,12 +188,13 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
 - Instalar paquetes necesarios para la Y540
   ```
-  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db
   ```
   - _network-manager-applet_ - Applet de NetworkManager
   - _xf86-video-intel_ - Drivers de Xorg para Intel **(Investigar si conviene utilizar modeset)**
   - _nvidia_ - Drivers de NVIDIA
   - _xorg-server_ - Servidor de X
+  - _man-db_ - Implementación de man pages
 - Instalar el helper de AUR **yay**
   ```
   git clone https://aur.archlinux.org/yay.git
