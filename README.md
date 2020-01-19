@@ -13,6 +13,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - [Configuración](#configuración)
     - [Básica](#básica)
     - [Ajustes necesarios](#ajustes-necesarios)
+    - [Paquetes para el funcionamiento básico](#paquetes-para-el-funcionamiento-básico)
 
 # Instalación Arch Linux
 
@@ -195,26 +196,32 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
 - Instalar paquetes necesarios para la Y540
   ```
-  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git
   ```
   - _network-manager-applet_ - Applet de NetworkManager
   - _xf86-video-intel_ - Drivers de Xorg para Intel **(Investigar si conviene utilizar modeset)**
   - _nvidia_ - Drivers de NVIDIA
   - _xorg-server_ - Servidor de X
   - _man-db_ - Implementación de man pages
+  - _git_ - Sistema de control de versiones
 - Instalar el helper de AUR **yay**
   ```
   git clone https://aur.archlinux.org/yay.git
   cd yay
   makepkg -si
   ```
-- Instalar desde AUR Google Chrome y Visual Studio Code
+
+### Paquetes para el funcionamiento básico
+
+- Inslatar un DM, WM y utilidad de wallpaper TODO: definir los paquetes
+- Instalar desde AUR **Google Chrome** y **Visual Studio Code**
   ```
   yay google-chrome
   yay visual-studio-code-bin
   ```
   <!--
   TODO: AGREGAR ACA LIGHTDM COMO DISPLAY MANAGER Y LIGHTDM-MINI-GREETER
+    instalar yay lightdm-mini-greeter, cambiar la configuracion en /etc/lightdm/lightdm.conf y /etc/lightdm/lightdm-mini-greeter.conf
   TODO: INVESTIGAR DIFERENTES TEMAS PARA LIGHTDM
   TODO: HACER UN SYSTEMCTL ENABLE Y EL DISPLAY MANGER QUE HAYA INSTALADO (LIGHTDM)
   TODO: INSTALAR CHROME
@@ -253,4 +260,5 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   TODO: CUSTOMIZAR EL PROMPT PS1
   TODO: LEER SYSTEM MAINTENANCE EN LA WIKI
   TODO: LEER SECURITY EN LA WIKI
+  TODO: Agregar sección con VISUDO
   -->
