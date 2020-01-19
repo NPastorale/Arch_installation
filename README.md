@@ -208,9 +208,10 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   cd yay
   makepkg -si
   ```
-- Instalar Google Chrome desde AUR
+- Instalar desde AUR Google Chrome y Visual Studio Code
   ```
   yay google-chrome
+  yay visual-studio-code-bin
   ```
   <!--
   TODO: AGREGAR ACA LIGHTDM COMO DISPLAY MANAGER Y LIGHTDM-MINI-GREETER
