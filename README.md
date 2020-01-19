@@ -2,16 +2,16 @@
 
 Esto es una guía creada a modo de documentación, y recovery en caso de ser necesario, que responde a mis necesidades específicas para la instalación y configuración básica de Arch Linux en una Lenovo Legion Y540. Puede ser utilizada para cualquier otro sistema realizando pequeñas modificaciones en caso de que fuesen necesarias. La gran mayoría del proceso está basado en la [ArchWiki](https://wiki.archlinux.org/), en diferentes respuestas que fuí encontrando a los problemas que se me presentaron durante el uso de Arch y lo que aprendí en el proceso.
 
-- [Instalación Arch Linux](#instalaci%c3%b3n-arch-linux)
-  - [Instalación base](#instalaci%c3%b3n-base)
-    - [Conexión a Internet y configuración de fecha y hora](#conexi%c3%b3n-a-internet-y-configuraci%c3%b3n-de-fecha-y-hora)
-    - [Definición y formateo de particiones](#definici%c3%b3n-y-formateo-de-particiones)
-    - [Montaje y creación de directorios necesarios](#montaje-y-creaci%c3%b3n-de-directorios-necesarios)
-    - [Instalación y configuración del sistema base](#instalaci%c3%b3n-y-configuraci%c3%b3n-del-sistema-base)
-    - [Configuración de GRUB](#configuraci%c3%b3n-de-grub)
+- [Instalación Arch Linux](#instalación-arch-linux)
+  - [Instalación base](#instalación-base)
+    - [Conexión a Internet y configuración de fecha y hora](#conexión-a-internet-y-configuración-de-fecha-y-hora)
+    - [Definición y formateo de particiones](#definición-y-formateo-de-particiones)
+    - [Montaje y creación de directorios necesarios](#montaje-y-creación-de-directorios-necesarios)
+    - [Instalación y configuración del sistema base](#instalación-y-configuración-del-sistema-base)
+    - [Configuración de GRUB](#configuración-de-grub)
     - [Pasos finales](#pasos-finales)
-  - [Configuración](#configuraci%c3%b3n)
-    - [Básica](#b%c3%a1sica)
+  - [Configuración](#configuración)
+    - [Básica](#básica)
     - [Ajustes necesarios](#ajustes-necesarios)
 
 # Instalación Arch Linux
@@ -212,45 +212,44 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
   yay google-chrome
   ```
-
   <!--
-    TODO: AGREGAR ACA LIGHTDM COMO DISPLAY MANAGER Y LIGHTDM-MINI-GREETER
-    TODO: INVESTIGAR DIFERENTES TEMAS PARA LIGHTDM
-    TODO: HACER UN SYSTEMCTL ENABLE Y EL DISPLAY MANGER QUE HAYA INSTALADO (LIGHTDM)
-    TODO: INSTALAR CHROME
-    TODO: INSTALAR DELUGE
-    TODO: INSTALAR DELUGE
-    TODO: PROBAR NEWSBOAT
-    TODO: PROBAR REMMINA
-    TODO: PROBAR URXVT Y TERMITE
-    TODO: COMPARAR SCREEN CON TMUX
-    TODO: PROBAR RANGER
-    TODO: PROBAR THUNAR
-    TODO: INVESTIGAR KEYBOARD LAYOUT SWITCHERS
-    TODO: WATERFALL PARECE UNA BUENA ALTERNATIVA PARA VER FUENTES
-    TODO: PROBAR CLIGHT PARA EL BRILLO DE LA PANTALLA Y QUE LO AJUSTE AUTOMATICAMENTE
-    TODO: PROBAR QUE XBACKLIGHT FUNCIONE CON MODESETTING EN INTEL
-    TODO: INVESTIGAR BLUETOOTH, BLUEMAN, BLUEZ Y BLUEZ-UTILS
-    TODO: INVESTIGAR SXHKD COMO REEMPLAZO DE i3 EN LA ASIGNACION DE HOTKEYS
-    TODO: INVESTIGAR DIFERENTES SOLUCIONES DE BACKUP
-    TODO: AGREGAR FEH
-    TODO: AGREGAR FOFI
-    TODO: INVESTIGAR LOGOUT UI
-    TODO: AGREGAR INSTRUCCIONES PARA EL SCROLLING NATURAL DEL TRACKPAD
-    TODO: AGREGAR INSTRUCCIONES PARA EL TAP TO CLICK
-    TODO: TEMA PERSONALIZADO DE GRUB
-    TODO: GRUB HOLD SHIFT PROBAR FUNCIONAMIENTO
-    TODO: PROBAR PANTALLA DE BLOQUEO DE i3
-    TODO: INVESTIGAR BLUR EN COMPTON (PICOM) U OTRO COMPOSITOR
-    TODO: INVESTIGAR UNDERVOLT
-    TODO: INVESTIGAR OPTIMUS
-    TODO: CONFIGURACION DE i3
-    TODO: INSTRUCCIONES PARA QUE FUNCIONE EL CONTROL DEL BRILLO (XBACKLIGHT)
-    TODO: INVESTIGAR PLYMOUTH Y OTROS BOOT SPLASH SCREEN
-    TODO: INVESTIGAR CPU FREQUENCY SCALING
-    TODO: LEER IMPROVING PERFORMANCE EN LA WIKI
-    TODO: LEER SOLID STATE DRIVE EN LA WIKI
-    TODO: CUSTOMIZAR EL PROMPT PS1
-    TODO: LEER SYSTEM MAINTENANCE EN LA WIKI
-    TODO: LEER SECURITY EN LA WIKI
-    -->
+  TODO: AGREGAR ACA LIGHTDM COMO DISPLAY MANAGER Y LIGHTDM-MINI-GREETER
+  TODO: INVESTIGAR DIFERENTES TEMAS PARA LIGHTDM
+  TODO: HACER UN SYSTEMCTL ENABLE Y EL DISPLAY MANGER QUE HAYA INSTALADO (LIGHTDM)
+  TODO: INSTALAR CHROME
+  TODO: INSTALAR DELUGE
+  TODO: INSTALAR DELUGE
+  TODO: PROBAR NEWSBOAT
+  TODO: PROBAR REMMINA
+  TODO: PROBAR URXVT Y TERMITE
+  TODO: COMPARAR SCREEN CON TMUX
+  TODO: PROBAR RANGER
+  TODO: PROBAR THUNAR
+  TODO: INVESTIGAR KEYBOARD LAYOUT SWITCHERS
+  TODO: WATERFALL PARECE UNA BUENA ALTERNATIVA PARA VER FUENTES
+  TODO: PROBAR CLIGHT PARA EL BRILLO DE LA PANTALLA Y QUE LO AJUSTE AUTOMATICAMENTE
+  TODO: PROBAR QUE XBACKLIGHT FUNCIONE CON MODESETTING EN INTEL
+  TODO: INVESTIGAR BLUETOOTH, BLUEMAN, BLUEZ Y BLUEZ-UTILS
+  TODO: INVESTIGAR SXHKD COMO REEMPLAZO DE i3 EN LA ASIGNACION DE HOTKEYS
+  TODO: INVESTIGAR DIFERENTES SOLUCIONES DE BACKUP
+  TODO: AGREGAR FEH
+  TODO: AGREGAR FOFI
+  TODO: INVESTIGAR LOGOUT UI
+  TODO: AGREGAR INSTRUCCIONES PARA EL SCROLLING NATURAL DEL TRACKPAD
+  TODO: AGREGAR INSTRUCCIONES PARA EL TAP TO CLICK
+  TODO: TEMA PERSONALIZADO DE GRUB
+  TODO: GRUB HOLD SHIFT PROBAR FUNCIONAMIENTO
+  TODO: PROBAR PANTALLA DE BLOQUEO DE i3
+  TODO: INVESTIGAR BLUR EN COMPTON (PICOM) U OTRO COMPOSITOR
+  TODO: INVESTIGAR UNDERVOLT
+  TODO: INVESTIGAR OPTIMUS
+  TODO: CONFIGURACION DE i3
+  TODO: INSTRUCCIONES PARA QUE FUNCIONE EL CONTROL DEL BRILLO (XBACKLIGHT)
+  TODO: INVESTIGAR PLYMOUTH Y OTROS BOOT SPLASH SCREEN
+  TODO: INVESTIGAR CPU FREQUENCY SCALING
+  TODO: LEER IMPROVING PERFORMANCE EN LA WIKI
+  TODO: LEER SOLID STATE DRIVE EN LA WIKI
+  TODO: CUSTOMIZAR EL PROMPT PS1
+  TODO: LEER SYSTEM MAINTENANCE EN LA WIKI
+  TODO: LEER SECURITY EN LA WIKI
+  -->
