@@ -13,7 +13,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - [Configuración](#configuración)
     - [Básica](#básica)
     - [Ajustes necesarios](#ajustes-necesarios)
-    - [Paquetes para el funcionamiento básico](#paquetes-para-el-funcionamiento-básico)
+    - [Display manager](#display-manager)
 
 # Instalación Arch Linux
 
@@ -219,9 +219,15 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   makepkg -si
   ```
 
-### Paquetes para el funcionamiento básico
+### Display manager
 
-- Inslatar un DM, WM y utilidad de wallpaper TODO: definir los paquetes
+- Inslatar `lightdm` y `lightdm-mini-greeter` como greeter
+  ```
+  yay lightdm-mini-greeter
+  ```
+- Editar `/etc/lightdm/lightdm.conf` y modificar `greeter-session=lightdm-mini-greeter`
+- Editar `/etc/lightdm/lightdm-mini-greeter.conf` y modificar `user = <USUARIO>`
+- WM y utilidad de wallpaper TODO: definir los paquetes
 - Instalar desde AUR **Google Chrome** y **Visual Studio Code**
   ```
   yay google-chrome
