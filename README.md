@@ -160,6 +160,10 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
   passwd
   ```
+- Activar NetworkManager
+  ```
+  systemctl enable NetworkManager
+  ```
 - Salir del chroot, desmontar las particiones y reiniciar
   ```
   exit
@@ -171,10 +175,6 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 
 ### Básica
 
-- Activar NetworkManager
-  ```
-  systemctl enable NetworkManager
-  ```
 - Crear un link de **vim** a **vi**
   ```
   ln -sf /usr/bin/vim usrb/bin/vi
