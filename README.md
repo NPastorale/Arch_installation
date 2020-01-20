@@ -227,6 +227,11 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
 - Editar `/etc/lightdm/lightdm.conf` y modificar `greeter-session=lightdm-mini-greeter`
 - Editar `/etc/lightdm/lightdm-mini-greeter.conf` y modificar `user = <USUARIO>`
+- Editar `~/.dmrc`
+  ```
+  [Desktop]
+  Session=bspwm
+  ```
 - WM y utilidad de wallpaper TODO: definir los paquetes
 - Instalar desde AUR **Google Chrome** y **Visual Studio Code**
   ```
