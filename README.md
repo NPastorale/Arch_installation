@@ -14,6 +14,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
     - [Básica](#básica)
     - [Ajustes necesarios](#ajustes-necesarios)
     - [Display manager](#display-manager)
+    - [Window maanger](#window-maanger)
 
 # Instalación Arch Linux
 
@@ -221,16 +222,20 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 
 ### Display manager
 
-- Inslatar `lightdm` y `lightdm-mini-greeter` como greeter
+- Inslatar **lightdm-mini-greeter** como greeter
   ```
   yay lightdm-mini-greeter
   ```
-- Editar `/etc/lightdm/lightdm.conf` y modificar `greeter-session=lightdm-mini-greeter`
+- Editar `/etc/lightdm/lightdm.conf` y modificar
+  - `greeter-session=lightdm-mini-greeter`
+  - `user-session=bspwm`
 - Editar `/etc/lightdm/lightdm-mini-greeter.conf` y modificar `user = <USUARIO>`
-- Editar `~/.dmrc`
+
+### Window maanger
+
+- Instalar **bspwm**
   ```
-  [Desktop]
-  Session=bspwm
+  sudo pacman
   ```
 - WM y utilidad de wallpaper TODO: definir los paquetes
 - Instalar desde AUR **Google Chrome** y **Visual Studio Code**
