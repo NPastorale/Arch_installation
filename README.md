@@ -76,6 +76,11 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   mkdir /mnt/home
   mount /dev/nvme0n1p3 /mnt/home
   ```
+- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida
+  ```
+  pacman -S reflector
+  reflector -n 12 -p https --sort rate --score 10 --save /etc/pacman.d/mirrorlist
+  ```
 
 ### Instalación y configuración del sistema base
 
@@ -170,6 +175,14 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
   systemctl enable NetworkManager
   ```
+- Crear un link de **vim** a **vi**
+  ```
+  ln -sf /usr/bin/vim usrb/bin/vi
+  ```
+- Editar los permisos de `sudo` y descomentar la línea `%wheel ALL=(ALL) ALL`
+  ```
+  visudo
+  ```
 - Agregar el usuario principal y asignarle una contraseña
   ```
   useradd -m -g users -G wheel,audio,video <USUARIO>
@@ -188,11 +201,6 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   nmcli radio wifi
   nmcli dev wifi list
   sudo nmcli --ask dev wifi connect <NOMBRE_DE_LA_RED>
-  ```
-- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida
-  ```
-  sudo pacman -S reflector
-  sudo reflector -n 12 -p https --sort rate --score 10 --save /etc/pacman.d/mirrorlist
   ```
 - Instalar paquetes necesarios para la Y540
   ```
