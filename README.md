@@ -14,7 +14,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
     - [Básica](#básica)
     - [Ajustes necesarios](#ajustes-necesarios)
     - [Display manager](#display-manager)
-    - [Window maanger](#window-maanger)
+    - [Window manager](#window-manager)
 
 # Instalación Arch Linux
 
@@ -161,7 +161,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
   passwd
   ```
-- Activar NetworkManager
+- Activar **NetworkManager**
   ```
   systemctl enable NetworkManager
   ```
@@ -230,29 +230,26 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - `greeter-session=lightdm-mini-greeter`
   - `user-session=bspwm`
 - Editar `/etc/lightdm/lightdm-mini-greeter.conf` y modificar `user = <USUARIO>`
+- Activar **lightdm**
+  ```
+  sudo systemctl enable lightdm.service
+  ```
 
-### Window maanger
+### Window manager
 
 - Instalar **bspwm**
   ```
-  sudo pacman
+  sudo pacman -S bspwm
   ```
-- WM y utilidad de wallpaper TODO: definir los paquetes
+- Utilidad de wallpaper TODO: definir los paquetes
 - Instalar desde AUR **Google Chrome** y **Visual Studio Code**
   ```
   yay google-chrome
   yay visual-studio-code-bin
   ```
   <!--
-  TODO: AGREGAR ACA LIGHTDM COMO DISPLAY MANAGER Y LIGHTDM-MINI-GREETER
-    instalar yay lightdm-mini-greeter, cambiar la configuracion en /etc/lightdm/lightdm.conf y /etc/lightdm/lightdm-mini-greeter.conf
-  TODO: INVESTIGAR DIFERENTES TEMAS PARA LIGHTDM
-  TODO: HACER UN SYSTEMCTL ENABLE Y EL DISPLAY MANGER QUE HAYA INSTALADO (LIGHTDM)
-  TODO: INSTALAR CHROME
-  TODO: INSTALAR DELUGE
-  TODO: INSTALAR DELUGE
-  TODO: PROBAR NEWSBOAT
-  TODO: PROBAR REMMINA
+  newsboat      lector RSS
+  remmina       remote desktop client
   TODO: PROBAR URXVT Y TERMITE
   TODO: COMPARAR SCREEN CON TMUX
   TODO: PROBAR RANGER
