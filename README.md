@@ -250,7 +250,8 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   <!--
   newsboat      lector RSS
   remmina       remote desktop client
-  TODO: PROBAR URXVT Y TERMITE
+  TODO: Agregar Termite
+  TODO: INVESTIGAR GNU Stow
   TODO: COMPARAR SCREEN CON TMUX
   TODO: PROBAR RANGER
   TODO: PROBAR THUNAR
@@ -262,7 +263,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   TODO: INVESTIGAR SXHKD COMO REEMPLAZO DE i3 EN LA ASIGNACION DE HOTKEYS
   TODO: INVESTIGAR DIFERENTES SOLUCIONES DE BACKUP
   TODO: AGREGAR FEH
-  TODO: AGREGAR FOFI
+  TODO: AGREGAR ROFI
   TODO: INVESTIGAR LOGOUT UI
   TODO: AGREGAR INSTRUCCIONES PARA EL SCROLLING NATURAL DEL TRACKPAD
   TODO: AGREGAR INSTRUCCIONES PARA EL TAP TO CLICK
