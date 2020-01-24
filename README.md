@@ -14,7 +14,6 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
     - [Básica](#básica)
     - [Ajustes necesarios](#ajustes-necesarios)
     - [Display manager](#display-manager)
-    - [Window manager](#window-manager)
 
 # Instalación Arch Linux
 
@@ -204,15 +203,20 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   sudo nmcli --ask dev wifi connect <NOMBRE_DE_LA_RED>
   ```
 - Instalar paquetes necesarios para la Y540
+
   ```
-  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh
   ```
+
   - _network-manager-applet_ - Applet de NetworkManager
   - _xf86-video-intel_ - Drivers de Xorg para Intel **(Investigar si conviene utilizar modeset)**
   - _nvidia_ - Drivers de NVIDIA
   - _xorg-server_ - Servidor de X
   - _man-db_ - Implementación de man pages
   - _git_ - Sistema de control de versiones
+  - _bspwm_ - Window manager
+  - _feh_ - Visualizador de imágenes. Lo utilizo principalmente para setear el fondo de pantalla
+
 - Instalar el helper de AUR **yay**
   ```
   git clone https://aur.archlinux.org/yay.git
@@ -235,14 +239,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   sudo systemctl enable lightdm.service
   ```
 
-### Window manager
-
-- Instalar **bspwm**
-  ```
-  sudo pacman -S bspwm
-  ```
-- Utilidad de wallpaper TODO: definir los paquetes
-- Instalar desde AUR **Google Chrome** y **Visual Studio Code**
+* Instalar desde AUR **Google Chrome** y **Visual Studio Code**
   ```
   yay google-chrome
   yay visual-studio-code-bin
