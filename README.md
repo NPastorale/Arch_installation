@@ -187,6 +187,8 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 
 - Configurar los locale de GRUB
 
+  <!--TODO: investigar si esto es realmente necesario -->
+
   ```
   mkdir /boot/grub/locale
   cp /usr/share/locale/en\@quot/LC_MESSAGES/grub.mo /boot/grub/locale/en.mo
@@ -264,7 +266,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Instalar paquetes necesarios para la Y540
 
   ```
-  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh termite
   ```
 
   - _network-manager-applet_ - Applet de NetworkManager
@@ -275,6 +277,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - _git_ - Sistema de control de versiones
   - _bspwm_ - Window manager
   - _feh_ - Visualizador de imágenes. Lo utilizo principalmente para setear el fondo de pantalla
+  - _termite_ - Emulador de terminal
 
 - Instalar el helper de AUR **yay**
 
@@ -313,21 +316,19 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   ```
 
   <!--
-  newsboat      lector RSS
-  remmina       remote desktop client
-  TODO: Agregar Termite
-  TODO: INVESTIGAR GNU Stow
-  TODO: COMPARAR SCREEN CON TMUX
-  TODO: PROBAR RANGER
-  TODO: PROBAR THUNAR
+  newsboat                                 lector RSS
+  remmina                                  remote desktop client
+  thunar, nemo, nautilus                   entre los mejores file managers
+  TODO: Investigar alacritty, kitty, tilix y extraterm
+  TODO: Investigar la configuración de GNU Stow
+  TODO: Investigar TMUX
   TODO: INVESTIGAR KEYBOARD LAYOUT SWITCHERS
   TODO: WATERFALL PARECE UNA BUENA ALTERNATIVA PARA VER FUENTES
   TODO: PROBAR CLIGHT PARA EL BRILLO DE LA PANTALLA Y QUE LO AJUSTE AUTOMATICAMENTE
   TODO: PROBAR QUE XBACKLIGHT FUNCIONE CON MODESETTING EN INTEL
   TODO: INVESTIGAR BLUETOOTH, BLUEMAN, BLUEZ Y BLUEZ-UTILS
-  TODO: INVESTIGAR SXHKD COMO REEMPLAZO DE i3 EN LA ASIGNACION DE HOTKEYS
-  TODO: INVESTIGAR DIFERENTES SOLUCIONES DE BACKUP
-  TODO: AGREGAR FEH
+  TODO: Investigar configuración de SXHKD
+  TODO: Investigar si TIMESHIFT es la mejor alternativa de backup
   TODO: AGREGAR ROFI
   TODO: INVESTIGAR LOGOUT UI
   TODO: AGREGAR INSTRUCCIONES PARA EL SCROLLING NATURAL DEL TRACKPAD
@@ -338,7 +339,6 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   TODO: INVESTIGAR BLUR EN COMPTON (PICOM) U OTRO COMPOSITOR
   TODO: INVESTIGAR UNDERVOLT
   TODO: INVESTIGAR OPTIMUS
-  TODO: CONFIGURACION DE i3
   TODO: INSTRUCCIONES PARA QUE FUNCIONE EL CONTROL DEL BRILLO (XBACKLIGHT)
   TODO: INVESTIGAR PLYMOUTH Y OTROS BOOT SPLASH SCREEN
   TODO: INVESTIGAR CPU FREQUENCY SCALING
@@ -347,5 +347,4 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   TODO: CUSTOMIZAR EL PROMPT PS1
   TODO: LEER SYSTEM MAINTENANCE EN LA WIKI
   TODO: LEER SECURITY EN LA WIKI
-  TODO: Agregar sección con VISUDO
   -->
