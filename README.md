@@ -319,7 +319,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   newsboat                                 lector RSS
   remmina                                  remote desktop client
   thunar, nemo, nautilus                   entre los mejores file managers
-  TODO: Investigar alacritty, kitty, tilix y extraterm
+  TODO: Investigar alacritty, kitty, tilix, extraterm y hyper
   TODO: Investigar la configuración de GNU Stow
   TODO: Investigar TMUX
   TODO: INVESTIGAR KEYBOARD LAYOUT SWITCHERS
