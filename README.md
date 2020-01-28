@@ -95,7 +95,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   mount /dev/nvme0n1p3 /mnt/home
   ```
 
-- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida
+- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida <!-- TODO: comprobar que reflector quede instalado en el sistema y no solamente en el live -->
 
   ```
   pacman -S reflector
@@ -266,7 +266,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Instalar paquetes necesarios para la Y540
 
   ```
-  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh termite
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh termite stow
   ```
 
   - _network-manager-applet_ - Applet de NetworkManager
@@ -278,6 +278,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - _bspwm_ - Window manager
   - _feh_ - Visualizador de imágenes. Lo utilizo principalmente para setear el fondo de pantalla
   - _termite_ - Emulador de terminal
+  - _stow_ - Utilidad para manejar los dotfiles
 
 - Instalar el helper de AUR **yay**
 
@@ -285,6 +286,15 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   git clone https://aur.archlinux.org/yay.git
   cd yay
   makepkg -si
+  ```
+
+- Clonar el repositorio de dotfiles y crear los symlinks con **stow**
+
+  ```
+  cd ~
+  git clone https://github.com/NPastorale/.dotfiles.git
+  cd .dotfiles
+  stow *
   ```
 
 ### Display manager
