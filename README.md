@@ -299,10 +299,10 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 
 ### Display manager
 
-- Inslatar **lightdm-mini-greeter** como greeter
+- Inslatar **lightdm-mini-greeter** como greeter, **Google Chrome** y **Visual Studio Code**
 
   ```
-  yay lightdm-mini-greeter
+  yay lightdm-mini-greeter google-chrome visual-studio-code-bin
   ```
 
 - Editar `/etc/lightdm/lightdm.conf` y modificar
@@ -316,13 +316,6 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 
   ```
   sudo systemctl enable lightdm.service
-  ```
-
-* Instalar desde AUR **Google Chrome** y **Visual Studio Code**
-
-  ```
-  yay google-chrome
-  yay visual-studio-code-bin
   ```
 
   <!--
