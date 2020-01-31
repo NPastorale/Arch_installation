@@ -95,7 +95,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   mount /dev/nvme0n1p3 /mnt/home
   ```
 
-- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida <!-- TODO: comprobar que reflector quede instalado en el sistema y no solamente en el live -->
+- Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida
 
   ```
   pacman -S reflector
@@ -229,7 +229,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Crear un link de **vim** a **vi**
 
   ```
-  ln -sf /usr/bin/vim usrb/bin/vi
+  ln -sf /usr/bin/vim usr/bin/vi
   ```
 
 - Editar los permisos de `sudo` y descomentar la línea `%wheel ALL=(ALL) ALL`
