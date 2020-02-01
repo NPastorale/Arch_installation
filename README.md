@@ -302,7 +302,9 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Inslatar **lightdm-mini-greeter** como greeter, **Google Chrome** y **Visual Studio Code**
 
   ```
-  yay lightdm-mini-greeter google-chrome visual-studio-code-bin
+  yay lightdm-mini-greeter
+  yay google-chrome
+  yay visual-studio-code-bin
   ```
 
 - Editar `/etc/lightdm/lightdm.conf` y modificar
