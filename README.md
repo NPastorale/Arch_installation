@@ -294,7 +294,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   cd ~
   git clone https://github.com/NPastorale/.dotfiles.git
   cd .dotfiles
-  stow *
+  ./setup.sh
   ```
 
 ### Display manager
