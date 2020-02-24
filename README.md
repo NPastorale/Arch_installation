@@ -229,7 +229,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Crear un link de **vim** a **vi**
 
   ```
-  ln -sf /usr/bin/vim usr/bin/vi
+  ln -sf /usr/bin/vim /usr/bin/vi
   ```
 
 - Editar los permisos de `sudo` y descomentar la línea `%wheel ALL=(ALL) ALL`
@@ -325,7 +325,6 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   remmina                                  remote desktop client
   thunar, nemo, nautilus                   entre los mejores file managers
   TODO: Investigar alacritty, kitty, tilix, extraterm y hyper
-  TODO: Investigar la configuración de GNU Stow
   TODO: Investigar TMUX
   TODO: INVESTIGAR KEYBOARD LAYOUT SWITCHERS
   TODO: WATERFALL PARECE UNA BUENA ALTERNATIVA PARA VER FUENTES
