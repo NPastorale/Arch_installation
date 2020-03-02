@@ -320,6 +320,12 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   sudo systemctl enable lightdm.service
   ```
 
+- Activar **fstrim**
+
+  ```
+  sudo systemctl enable fstrim.timer
+  ```
+
   <!--
   newsboat                                 lector RSS
   remmina                                  remote desktop client
