@@ -98,9 +98,11 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Instalar y ejecutar **reflector** para actualizar la lista de mirrors a la más rápida
 
   ```
-  pacman -S reflector
-  reflector -n 12 -p https --sort rate --score 10 --save /etc/pacman.d/mirrorlist
+  pacman -Sy reflector
+  reflector --protocol https -c Spain --sort rate --save /etc/pacman.d/mirrorlist
   ```
+
+<!-- hay un problema con reflector aparentemente con python >3.7 -->
 
 ### Instalación y configuración del sistema base
 
