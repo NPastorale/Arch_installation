@@ -27,13 +27,15 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   rfkill
   ```
 
+  <!--TODO wifi-menu no está incluído en la ISO de Arch, reemplazarlo por iwctl https://wiki.archlinux.org/index.php/Iwd#iwctl -->
+
 - Conectarse al WiFi
 
   ```
-  wifi-menu
+  USAR IWCTL
   ```
 
-- Verificar tener una IP asignada y corroborarlo
+- Verificar tener una IP asignada y corroborar la conectividad
 
   ```
   ip a
@@ -268,7 +270,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Instalar paquetes necesarios para la Y540
 
   ```
-  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh termite stow
+  sudo pacman -S network-manager-applet xf86-video-intel nvidia xorg-server man-db git bspwm feh kitty stow sxhkd
   ```
 
   - _network-manager-applet_ - Applet de NetworkManager
@@ -279,14 +281,15 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
   - _git_ - Sistema de control de versiones
   - _bspwm_ - Window manager
   - _feh_ - Visualizador de imágenes. Lo utilizo principalmente para setear el fondo de pantalla
-  - _termite_ - Emulador de terminal
+  - _kitty_ - Emulador de terminal
   - _stow_ - Utilidad para manejar los dotfiles
+  - _sxhkd_ - Hotkey manager
 
-- Instalar el helper de AUR **yay**
+- Instalar el helper de AUR **paru**
 
   ```
-  git clone https://aur.archlinux.org/yay.git
-  cd yay
+  git clone https://aur.archlinux.org/paru.git
+  cd paru
   makepkg -si
   ```
 
@@ -304,9 +307,7 @@ Esto es una guía creada a modo de documentación, y recovery en caso de ser nec
 - Inslatar **lightdm-mini-greeter** como greeter, **Google Chrome** y **Visual Studio Code**
 
   ```
-  yay lightdm-mini-greeter
-  yay google-chrome
-  yay visual-studio-code-bin
+  paru -S lightdm-mini-greeter google-chrome visual-studio-code-bin
   ```
 
 - Editar `/etc/lightdm/lightdm.conf` y modificar
